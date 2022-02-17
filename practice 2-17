@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  var str = 'JavaScript_RegExp_5@gmail.com';
+
+	var regexp1 = /\w{9}@\w{2}/;
+	var regexp2 = new Regexp("\\w{9}@\\w{2}");
+	var regexp3 = /\w{9}@\w{2}/i;
+	var regexp4 = new Regexp("\\w{9}@\\w{2}","i");
+	var test1 = regexp1.test(str);
+	var test2 = regexp2.test(str);
+	var test3 = regexp3.exec(str);
+	var test4 = regexp4.exec(str);
+  console.log(regexp1.test(str)+"/"+ regexp2.test(str)+"/"+regexp3.exec(str)+"/"+regexp4.exec(str)+"/");
+	
+	
+</script>
